@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ScriptEd MidYear Review</title>
+  <link rel="stylesheet" href="css/tufte.css">
+</head>
+<body>
+  <article class="sans">
+    <h1>ScriptEd Basketball</h1>
+    <p class="subtitle">A review of all we have done so far</p>
+    <figure class="fullwidth">
+      <img src="img/jumpgirl_jumpman.jpg" alt="jumpman_jumpgirl picture">
+    </figure>
+
+    <section>
+      <h2>HTML</h2>
+      <p>Right now the output of your page should look something like this:</p>
+      <figure><img src="img/ScriptEd_halfway_review_1.png" alt=""></figure>
+      <p>
+        You are going to set up the HTML for your game. First, you should give the
+        page the title "ScriptEd Basketball". It will look something like this(except without the typo):
+      </p>
+      <figure>
+        <img src="img/ScriptEd_halfway_review_2.png" alt="">
+      </figure>
+
+      <p>
+        Below the <code>h2</code> tag put an <code>h3</code> tag with an id of <code>player-one-score</code>.
+        Inside the <code>h3</code> write: "Player one score will go here. It should have an id of
+        'player-one-score'". Add a second <code>h3</code> and this time give it an
+        id of <code>player-two-score</code> and inside of it write: "Player two score
+        will go here. It should have an id of 'player-one-score'". It will look
+        something like this(again expect for the typos):
+      </p>
+      <figure><img src="img/ScriptEd_halfway_review_3.png" alt=""></figure>
+
+      <p>
+        Below the <code>h3</code> for player one add a paragraph with a class of
+        <code>player-one-name</code>. Inside the paragraph write "This is a paragraph
+         for player one's name. It has a class of 'player-one-name'". Do the same
+         the same thing for player two, except the class should be <code>player-two-name</code>
+         and the paragraph should say: "This is a paragraph for player two's name.
+         It has a class of 'player-two-name'". It will look like this:
+      </p>
+      <figure><img src="img/ScriptEd_halfway_review_4.png" alt=""></figure>
+
+      <p>
+        Right below the paragraph for player one put an image that represents them.
+        You can search google for whatever image you want. Do the same for player two.
+        I chose some nice sneakers:
+      </p>
+      <figure><img src="img/ScriptEd_halfway_review_5.png" alt=""></figure>
+    </section>
+
+    <section>
+      <h2>JavaScript</h2>
+      <p>
+        In the JSBin  that you started this project there is some starter code.
+        Do not touch this code. You can start writing code where you see the comment
+        <code>START WRITING CODE HERE</code>.
+      </p>
+      <figure>
+        <img src="img/ScriptEd_halfway_review_6.png" alt="">
+      </figure>
+
+      <p>
+        The starter code has a function called <code>promptForPlayerName</code>
+        that takes one parameter, <code>playerNumber</code>. The <code>playerNumber</code>
+        will be a string that is either <code>"Player 1"</code> or <code>"Player 2"</code>.
+        It uses the <code>prompt</code> function to ask the player for their name at the
+        the beginning of the game. It saves whatever answer the person gives into a varaible.
+        Your job is to complete this function by using the <code>alert</code> function
+        to say "Wow, that is a long name!" if the name the person gives is longer than 15
+        characters and to make the function return whatever answer the person gives.
+      </p>
+
+      <p>
+        If the function returns the variable storing the answer for the prompt
+        and you put "Kevin" for player 1 and "Lebron"
+        for player 2. It will look this:
+      </p>
+      <figure><img src="img/ScriptEd_halfway_review_7.png" alt=""></figure>
+
+      <p>
+        If you put in the check for a really long name and when you are prompted
+        you type in "My name is
+        really really long." You should get and alert like this:
+      </p>
+      <figure><img src="img/ScriptEd_halfway_review_8.png" alt=""></figure>
+
+      <p>
+        Next you are going to define a function called <code>tryTwoPointShot</code>
+        that takes no parameters. It should generate two random numbers that each get
+        assigned to their own variables. It should then check if both numbers are
+        greater than 0.2 and if they are it should return <code>true</code> otherwise
+        it should return <code>false</code>.
+      </p>
+
+      <p>
+        To test that your code works print each number to console and before you
+        return <code>true</code> print out "Both numbers are greater than 0.2" and before
+        you return <code>false</code> print out "Both numbers are NOT greater than 0.2".
+        Think about where you should put the code that prints out whether the numbers are
+        greater than 0.2 in your conditional block. If you do this right your console
+        will look something like this everytime you click the "Take two point shot" button:
+      </p>
+      <figure>
+        <label for="mn-demo" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="mn-demo" class="margin-toggle"/>
+        <span class="marginnote">
+          The number of times you have to click the "Take two point shot" button
+           to get both types of answers will probably be different.
+        </span>
+        <img src="img/ScriptEd_halfway_review_9.png" alt="">
+
+      </figure>
+      <p>
+        Now we are going to write the function for the three point shot. The function
+        is named <code>tryThreePointShot</code> and takes no parameters. It also
+        generates two random numbers which should each be stored in variables. If
+        the first number is less than or equal to 0.2 OR the second number is greater than or
+        equal to 0.8 then it should return <code>true</code> otherwise it should return
+        <code>false</code>
+      </p>
+
+      <p>
+        To test your code you are going to do the same thing you did for
+        <code>tryTwoPointShot</code> except the message before you return
+        <code>true</code> will be "Either the first random number is less than or equal to 0.2 OR the second random number is greater than or equal to 0.8." and the message before you return <code>false</code> will
+        be "The first random number is NOT less than or equal to 0.2 NOR is the second random number greater than or equal to 0.8.".
+        If you do it right your console will look something like this after
+        clicking the "Take three point shot" button:
+      </p>
+      <figure>
+        <label for="mn-demo" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="mn-demo" class="margin-toggle"/>
+        <span class="marginnote">
+          You will probably have to click the button more than twice to make sure you
+          get both potential outcomes.
+        </span>
+        <img src="img/ScriptEd_halfway_review_10.png" alt="">
+      </figure>
+      <p>
+        You are now going to write a function called <code>getShotString</code> whose
+        job is to return a string saying what type of shot was attempted and whether or not
+        it went in. <code>getShotString</code> takes in three paramters. The first,
+        <code>playerName</code> is a string of the player's name. The second,
+        <code>points</code> is a number representing how many points the shot was for.
+        The third, <code>wasSuccessful</code> is a boolean that tells whether or not the
+        shot was good. <code>getShotString</code> should return a string that looks
+        like: "Lebron attempted a 2. It was No Goood." or "Kevin attempted a 3. It was Good."
+      </p>
+
+      <p>
+        This is one is a little trickier than the previous ones. It's OK if you don't get it right away.
+        You have to put together a string based on the parameters. The format of
+        the string is: <code>"BLANK attempted a BLANK . It was BLANK."</code>.
+        You have to figure out how how to fill in the blanks.
+        When you get it right it will look like:
+      </p>
+      <figure><img src="img/ScriptEd_halfway_review_11A.png" alt=""></figure>
+      <figure><img src="img/ScriptEd_halfway_review_11B.png" alt=""></figure>
+
+      <p>
+        We are going to start showing the score. You are going to write a function
+        called <code>updateScore</code> that takes in three parameters. The first
+        parameter, <code>wasShotMade</code> is a boolean that says whether or not the shot
+        was made. The second, <code>currentScore</code>, is the players current score. The
+        third, <code>points</code>, is how many points the shot was for. If the shot
+        was made then <code>points</code> should be added to <code>currentScore</code>. The function
+        should return <code>currentScore</code> whether or not the shot was made.
+        Test that your function worksby trying a couple of shots and make sure that your the
+        score updates as it should.
+      </p>
+      <figure>
+        <label for="mn-demo" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="mn-demo" class="margin-toggle"/>
+        <span class="marginnote">
+          Notice the 2
+        </span>
+        <img src="img/ScriptEd_halfway_review_12A.png" alt="">
+
+      </figure>
+      <figure>
+        <label for="mn-demo" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="mn-demo" class="margin-toggle"/>
+        <span class="marginnote">
+          Notice the 3
+        </span>
+        <img src="img/ScriptEd_halfway_review_12B.png" alt="">
+
+      </figure>
+
+      <p>
+        We have come to the last JavaScript function in the game, <code>isEndOfGame</code>.
+        This function checks if any player has a score greater than 20; if they do
+        the game is over and that player has won. <code>isEndOfGame</code> takes two
+        parameters. The first, <code>currentScore</code>, is the current player's score.
+        The second, <code>playerName</code>, is the current player's name. If the score is greater
+        than 20 it should do two things: alert to say "The game is over BLANK won."
+        (fill in the blank with the player's name) and it should return <code>true</code>. Otherwise, it should
+        return <code>false</code>. It will look like the picture below when a player has won.
+      </p>
+
+      <figure><img src="img/ScriptEd_halfway_review_13.png" alt=""></figure>
+    </section>
+    <section>
+      <h2>CSS</h2>
+      <p>
+        Now comes the time to add some color and style to the game. The first thing
+        we are going to do is change the color the score for each player. Use the
+        id selector for each player's score and make player one's score red and player
+        two's score orange.
+      </p>
+      <figure><img src="img/ScriptEd_halfway_review_14.png" alt=""></figure>
+
+      <p>
+        Now lets make the paragraphs that have the player's name a little bigger.
+        Use the paragraph selector to change the font-size of both paragraphs to 24px.
+      </p>
+      <figure>
+        <label for="mn-demo" class="margin-toggle">&#8853;</label>
+        <input type="checkbox" id="mn-demo" class="margin-toggle"/>
+        <span class="marginnote">
+          Notice that the paragraphs are bigger.
+        </span>
+        <img src="img/ScriptEd_halfway_review_15.png" alt="">
+      </figure>
+
+      <p>
+        We are going to make the buttons pop! The buttons have classes of
+        <code>js-two-pointer</code>, <code>js-three-pointer</code> and
+        <code>js-reset</code>. Using the class selector give the "Take two point shot"
+        button a background-color of orange and make the text red. Then give
+        it a padding of 20px and and font-size of 18px. Do the same thing for the
+        "Take three point shot" except give it a background-color of red and make
+        the text orange.
+      </p>
+      <figure><img src="img/ScriptEd_halfway_review_16.png" alt=""></figure>
+
+      <p>
+        Now we are going to do something about the reset button. Let's make it a
+        little different by giving it a background color of ivory and text that is
+        darkslategrey. Give it a border that 1px wide solid and also darkslategrey.
+        Lets not make it as large as the shooting  buttons so give it a padding of 10px and
+        give the text a font-size of 16px.
+      </p>
+      <figure><img src="img/ScriptEd_halfway_review_17.png" alt=""></figure>
+    </section>
+  </article>
+
+</body>
+</html>
